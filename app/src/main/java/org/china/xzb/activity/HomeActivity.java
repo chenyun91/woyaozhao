@@ -19,6 +19,7 @@ import org.china.xzb.fragment.MainFragment;
 import org.china.xzb.fragment.MineFragment;
 import org.china.xzb.utils.PreferenceUtil;
 import org.china.xzb.views.NoScrollViewPager;
+
 import com.zhy.autolayout.AutoRelativeLayout;
 
 import java.util.ArrayList;
@@ -31,7 +32,7 @@ import butterknife.ButterKnife;
  * Created by hch on 2017/3/10.
  */
 
-public class HomeActivity extends BaseActivity implements View.OnClickListener{
+public class HomeActivity extends BaseActivity implements View.OnClickListener {
     @BindView(R.id.fl_bottom)
     public FrameLayout flBottom;
     @BindView(R.id.rl_add_comment)
@@ -65,7 +66,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
     }
 
     private void initViewPager() {
-        mViewPager= (NoScrollViewPager) findViewById(R.id.nsvp_home);
+        mViewPager = (NoScrollViewPager) findViewById(R.id.nsvp_home);
         mViewPager.setOffscreenPageLimit(4);
         initViewPagerData();
     }
@@ -85,14 +86,14 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
     }
 
     private void initViewPagerData() {
-        fm=getSupportFragmentManager();
-        mFragments=new ArrayList<>();
-        findFragment=new FindFragment();
-        chatFragment=new ChatFragment();
-        dynamicFragment=new DynamicFragment();
-        mainFragment=new MainFragment();
-        mineFragment=new MineFragment();
-        mAdapter=new FragmentPagerAdapter(fm) {
+        fm = getSupportFragmentManager();
+        mFragments = new ArrayList<>();
+        findFragment = new FindFragment();
+        chatFragment = new ChatFragment();
+        dynamicFragment = new DynamicFragment();
+        mainFragment = new MainFragment();
+        mineFragment = new MineFragment();
+        mAdapter = new FragmentPagerAdapter(fm) {
             @Override
             public Fragment getItem(int position) {
 
@@ -107,10 +108,13 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
         mViewPager.setAdapter(mAdapter);
         mViewPager.setCurrentItem(2);
         //启动app时，账号已登录时，刷新未读消息
-        if (PreferenceUtil.isLogin(HomeActivity.this)){
+        if (PreferenceUtil.isLogin(HomeActivity.this)) {
+            if (true) {
 
+            }
         }
     }
+
     @Override
     public void onClick(View v) {
 
