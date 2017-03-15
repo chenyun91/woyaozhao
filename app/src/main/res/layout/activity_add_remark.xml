@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_remark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical"
+     >
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19px"
+            android:text="取消"
+            android:textColor="#a7a7a7"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加备注"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19px"
+            android:text="保存"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#e3e3e3" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="94px"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="备注名"
+            android:textColor="#a7a7a7"
+            android:textSize="18sp"
+            android:includeFontPadding="false"
+            />
+
+        <EditText
+            android:id="@+id/et_remark"
+            android:layout_width="480px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:background="@null"
+            android:textColor="#404040"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:hint="新的备注名称"
+            android:gravity="right"
+            tools:text="喜多多"
+            android:includeFontPadding="false"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

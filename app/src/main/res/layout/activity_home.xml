@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.leshua.xzb.views.NoScrollViewPager
+        android:id="@+id/nsvp_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+    </com.leshua.xzb.views.NoScrollViewPager>
+
+    <FrameLayout
+        android:id="@+id/fl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shape_top_line"
+            android:layout_height="50dp">
+
+            <FrameLayout
+                android:id="@+id/fl_home_find"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_home_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/ic_main_find_uncheck"
+                    android:gravity="center"
+                    android:text="发现"
+                    android:textColor="@color/graylight" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/fl_home_chat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_home_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/ic_main_chat_uncheck"
+                    android:gravity="center"
+                    android:text="聊天"
+                    android:textColor="@color/graylight" />
+
+                <TextView
+                    android:id="@+id/unread_msg_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/em_unread_count_bg"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="invisible"/>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_home_dynamic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_home_dynamic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/ic_main_dynamic_uncheck"
+                    android:drawablePadding="3dp"
+                    android:textColor="@color/graylight"
+                    android:text="动态"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_home_mine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_home_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/ic_main_mine_uncheck"
+                    android:drawablePadding="3dp"
+                    android:textColor="@color/graylight"
+                    android:text="我的"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_home_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_main_search"/>
+        </FrameLayout>
+    </FrameLayout>
+    <include layout="@layout/dynamic_add_comment"></include>
+</FrameLayout>
