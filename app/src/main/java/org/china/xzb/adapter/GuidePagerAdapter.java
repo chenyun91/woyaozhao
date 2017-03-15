@@ -1,4 +1,4 @@
-package com.leshua.xzb.adapter;
+package org.china.xzb.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.leshua.xzb.activity.HomeActivity;
-import com.leshua.xzb.R;
-import com.leshua.xzb.utils.PreferenceUtil;
+import org.china.xzb.R;
+import org.china.xzb.activity.HomeActivity;
+import org.china.xzb.utils.PreferenceUtil;
 
 /**
  * Created by hch on 2017/3/13.

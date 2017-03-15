@@ -1,4 +1,4 @@
-package com.leshua.xzb.activity;
+package org.china.xzb.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,11 +10,15 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.leshua.xzb.R;
-import com.leshua.xzb.activity.base.BaseActivity;
-import com.leshua.xzb.fragment.ChatFragment;
-import com.leshua.xzb.fragment.FindFragment;
-import com.leshua.xzb.views.NoScrollViewPager;
+import org.china.xzb.R;
+import org.china.xzb.activity.base.BaseActivity;
+import org.china.xzb.fragment.ChatFragment;
+import org.china.xzb.fragment.DynamicFragment;
+import org.china.xzb.fragment.FindFragment;
+import org.china.xzb.fragment.MainFragment;
+import org.china.xzb.fragment.MineFragment;
+import org.china.xzb.utils.PreferenceUtil;
+import org.china.xzb.views.NoScrollViewPager;
 import com.zhy.autolayout.AutoRelativeLayout;
 
 import java.util.ArrayList;
@@ -85,6 +89,27 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
         mFragments=new ArrayList<>();
         findFragment=new FindFragment();
         chatFragment=new ChatFragment();
+        dynamicFragment=new DynamicFragment();
+        mainFragment=new MainFragment();
+        mineFragment=new MineFragment();
+        mAdapter=new FragmentPagerAdapter(fm) {
+            @Override
+            public Fragment getItem(int position) {
+
+                return mFragments.get(position);
+            }
+
+            @Override
+            public int getCount() {
+                return mFragments.size();
+            }
+        };
+        mViewPager.setAdapter(mAdapter);
+        mViewPager.setCurrentItem(2);
+        //启动app时，账号已登录时，刷新未读消息
+        if (PreferenceUtil.isLogin(HomeActivity.this)){
+
+        }
     }
     @Override
     public void onClick(View v) {

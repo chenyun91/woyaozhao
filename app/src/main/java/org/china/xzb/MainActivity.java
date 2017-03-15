@@ -1,4 +1,4 @@
-package com.leshua.xzb;
+package org.china.xzb;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

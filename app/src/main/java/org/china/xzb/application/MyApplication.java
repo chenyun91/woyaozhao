@@ -1,6 +1,5 @@
-package com.leshua.xzb.application;
+package org.china.xzb.application;
 
-import android.app.Application;
 import android.support.multidex.MultiDexApplication;
 
 /**

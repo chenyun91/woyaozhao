@@ -1,4 +1,4 @@
-package com.leshua.xzb.activity.base;
+package org.china.xzb.activity.base;
 
 import android.content.Context;
 import android.os.Bundle;

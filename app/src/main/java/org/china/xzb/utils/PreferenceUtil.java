@@ -1,4 +1,4 @@
-package com.leshua.xzb.utils;
+package org.china.xzb.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

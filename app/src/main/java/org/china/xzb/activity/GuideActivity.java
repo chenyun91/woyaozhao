@@ -1,16 +1,14 @@
-package com.leshua.xzb.activity;
+package org.china.xzb.activity;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.View;
-import android.view.ViewManager;
 
-import com.leshua.xzb.R;
-import com.leshua.xzb.activity.base.BaseActivity;
-import com.leshua.xzb.adapter.GuidePagerAdapter;
+
+import org.china.xzb.R;
+import org.china.xzb.activity.base.BaseActivity;
+import org.china.xzb.adapter.GuidePagerAdapter;
 
 /**
  * Created by hch on 2017/3/10.

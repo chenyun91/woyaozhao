@@ -1,4 +1,4 @@
-package com.leshua.xzb.fragment;
+package org.china.xzb.fragment;
 
 import android.support.v4.app.Fragment;
 

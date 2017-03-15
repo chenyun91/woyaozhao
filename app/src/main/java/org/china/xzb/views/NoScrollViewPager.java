@@ -1,11 +1,9 @@
-package com.leshua.xzb.views;
+package org.china.xzb.views;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import android.widget.ScrollView;
-import android.widget.TextView;
 
 /**
  * Created by hch on 2017/3/13.

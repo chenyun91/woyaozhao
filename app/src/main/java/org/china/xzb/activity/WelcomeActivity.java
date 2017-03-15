@@ -1,4 +1,4 @@
-package com.leshua.xzb.activity;
+package org.china.xzb.activity;
 
 import android.Manifest;
 import android.content.DialogInterface;
@@ -15,9 +15,10 @@ import android.widget.Toast;
 
 import com.anthonycr.grant.PermissionsManager;
 import com.anthonycr.grant.PermissionsResultAction;
-import com.leshua.xzb.R;
-import com.leshua.xzb.activity.base.BaseActivity;
-import com.leshua.xzb.utils.PreferenceUtil;
+
+import org.china.xzb.R;
+import org.china.xzb.activity.base.BaseActivity;
+import org.china.xzb.utils.PreferenceUtil;
 
 import java.util.Timer;
 import java.util.TimerTask;
